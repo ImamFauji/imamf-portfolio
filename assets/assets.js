@@ -76,18 +76,17 @@ export const assets = {
   right_arrow_bold_dark,
 };
 
-const basePath = process.env.NODE_ENV === "production"
-  ? "/imamf-portfolio"
-  : "";
+const basePath =
+  process.env.NODE_ENV === "production" ? "/imamf-portfolio" : "";
 
 export const workData = [
   {
-      title: "Frontend project",
-      description: "Next.js Portfolio",
-      bgImage: "/work-1.png",
-      bgImage: `${basePath}/work-1.png`,
-    },
-    {
+    title: "Frontend project",
+    description: "Next.js Portfolio",
+    bgImage: "/work-1.png",
+    bgImage: `${basePath}/work-1.png`,
+  },
+  {
     title: "Backend project",
     description: "API & Database",
     bgImage: "/work-2.png",
@@ -103,6 +102,7 @@ export const workData = [
     title: "UI/UX designing",
     description: "SIASAT UKSW",
     bgImage: "/work-4.png",
+    bgImage: `${basePath}/work-4.png`,
   },
 ];
 
@@ -110,7 +110,8 @@ export const serviceData = [
   {
     icon: assets.web_icon,
     title: "Fullstack development",
-    description: "Fullstack development is focuses on both frontend and backend...",
+    description:
+      "Fullstack development is focuses on both frontend and backend...",
     link: "",
   },
   {
@@ -164,5 +165,3 @@ export const toolsData = [
   assets.figma,
   assets.git,
 ];
-
-
