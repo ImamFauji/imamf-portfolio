@@ -32,6 +32,10 @@ html, body {
   color: var(--page-text);
 }
 
-.bg-planes {
+/* .bg-planes {
   background-image: url('/planes_cover.jpg');
+} */
+
+.bg-planes {
+  background-image: url('/imamf-portfolio/planes_cover.jpg');
 }

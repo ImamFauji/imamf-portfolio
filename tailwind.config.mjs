@@ -6,6 +6,7 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: ["bg-[url('/imamf-portfolio/planes_cover.jpg')]"],
   theme: {
     extend: {
       colors: {
