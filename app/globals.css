@@ -31,3 +31,7 @@ html, body {
   background-color: var(--page-bg);
   color: var(--page-text);
 }
+
+.bg-planes {
+  background-image: url('/planes_cover.jpg');
+}
