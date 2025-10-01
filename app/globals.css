@@ -38,4 +38,5 @@ html, body {
 
 .bg-planes {
   background-image: url('/imamf-portfolio/planes_cover.jpg');
+  background-image: url('/planes_cover.jpg');
 }

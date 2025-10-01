@@ -76,21 +76,28 @@ export const assets = {
   right_arrow_bold_dark,
 };
 
+const basePath = process.env.NODE_ENV === "production"
+  ? "/imamf-portfolio"
+  : "";
+
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Next.js Portfolio",
-    bgImage: "/work-1.png",
-  },
-  {
+      title: "Frontend project",
+      description: "Next.js Portfolio",
+      bgImage: "/work-1.png",
+      bgImage: `${basePath}/work-1.png`,
+    },
+    {
     title: "Backend project",
     description: "API & Database",
     bgImage: "/work-2.png",
+    bgImage: `${basePath}/work-2.png`,
   },
   {
     title: "Fullstack project",
     description: "Wikipedia Games",
     bgImage: "/work-3.png",
+    bgImage: `${basePath}/work-3.png`,
   },
   {
     title: "UI/UX designing",
@@ -157,3 +164,5 @@ export const toolsData = [
   assets.figma,
   assets.git,
 ];
+
+
