@@ -1,26 +1,33 @@
 @import "tailwindcss";
 
+* {
+  font-family: Outfit;
+}
+
+.grid-cols-auto {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* globals.css — paste di paling atas */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --page-bg: #ffffff;
+  --page-text: #000000;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* saat dark aktif (next-themes/your toggle menambahkan class "dark" ke <html>) */
+.dark {
+  --page-bg: #0f172a; /* gray-900 */
+  --page-text: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* gunakan variabel ini sebagai fallback background + text untuk seluruh halaman */
+html, body {
+  background-color: var(--page-bg);
+  color: var(--page-text);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* khusus untuk dark mode */
+.dark html, .dark body {
+  background-color: var(--page-bg);
+  color: var(--page-text);
 }
